@@ -12,7 +12,7 @@ ORDER BY normally sorts query results, but attackers use it to detect the number
 
 ### Example Query
 
-SELECT name, price, description
+SELECT name, price, description 
 FROM products
 WHERE category='Pets'
 
