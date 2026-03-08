@@ -1,0 +1,27 @@
+SQL Injection
+│
+├─ 1. Authentication Bypass ✅
+│
+├─ 2. Enumeration
+│     └─ Column Count Detection (ORDER BY) ✅
+│
+├─ 3. UNION-Based SQL Injection ✅
+│     ├─ Output Column Discovery
+│     ├─ Database Enumeration
+│     ├─ Table Enumeration
+│     └─ Data Extraction
+│
+├─ 4. Error-Based SQL Injection
+│
+├─ 5. Blind SQL Injection
+│     ├─ Boolean-Based Blind SQLi
+│     └─ Time-Based Blind SQLi
+│
+├─ 6. WAF / Filter Bypass
+│     ├─ Comments
+│     ├─ Case variation
+│     ├─ Encoding
+│     └─ Keyword splitting
+│
+└─ 7. Automated SQL Injection
+      └─ sqlmap
